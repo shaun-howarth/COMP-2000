@@ -5,6 +5,11 @@ import java.awt.*;
 
 public class KioskPage extends JFrame {
     private JPanel mainPanel;
+    private JButton removeBtn;
+    private JButton paymentBtn;
+    private JTextArea scannedtextArea;
+    private JTextArea pricetextArea;
+    private JButton homeBtn;
 
 
     public KioskPage(){
