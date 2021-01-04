@@ -5,6 +5,9 @@ import java.awt.*;
 
 public class LandingPage extends JFrame {
     private JPanel mainPanel;
+    private JButton kioskBtn;
+    private JButton loginBtn;
+    private JButton exitBtn;
 
     public LandingPage() {
         setContentPane(mainPanel);
