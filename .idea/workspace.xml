@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/StockdbPage.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/COMP-2000.iml" beforeDir="false" afterPath="$PROJECT_DIR$/COMP-2000.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
