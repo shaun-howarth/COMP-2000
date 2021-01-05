@@ -2,6 +2,8 @@ package com;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LandingPage extends JFrame {
     private JPanel mainPanel;
@@ -14,6 +16,9 @@ public class LandingPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
         pack();
+
+        // Continue with Event listener
+
     }
 
     public static void main(String[] args){
