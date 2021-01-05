@@ -5,7 +5,9 @@ import java.awt.*;
 
 public class PaymentPage extends JFrame {
     private JPanel mainPanel;
-
+    private JButton cashBtn;
+    private JButton cardBtn;
+    private JTextArea totaltextArea;
 
 
     public PaymentPage() {
