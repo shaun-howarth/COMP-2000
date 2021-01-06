@@ -23,18 +23,18 @@ public class LandingPage extends JFrame {
         kioskBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         loginBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
+
+
         // Event listener for Kiosk interface button: to go to kiosk page
 
         kioskBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
-
                 KioskPage s = new KioskPage();
                 s.setVisible(true);
-
-
             }
         });
+
 
         // Event listener for Admin Login button: to go to Admin login page
 
