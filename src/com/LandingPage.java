@@ -22,6 +22,7 @@ public class LandingPage extends JFrame {
 
         kioskBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         loginBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        exitBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
 
@@ -43,6 +44,15 @@ public class LandingPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 AdminPage s = new AdminPage();
                 s.setVisible(true);
+            }
+        });
+
+        //Event listener for closing application: Exit button
+
+        exitBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
             }
         });
     }
