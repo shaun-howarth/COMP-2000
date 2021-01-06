@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PaymentPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
-  <component name="RunManager" selected="Application.LandingPage">
+  <component name="RunManager" selected="Application.PaymentPage">
     <configuration name="AdminPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdminPage" />
       <module name="COMP-2000" />
@@ -51,8 +51,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CashPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.CashPage" />
+    <configuration name="KioskPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.KioskPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -77,8 +77,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReceiptPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ReceiptPage" />
+    <configuration name="PaymentPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.PaymentPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -105,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.PaymentPage" />
+        <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.LandingPage" />
         <item itemvalue="Application.StockdbPage" />
         <item itemvalue="Application.AdminPage" />
-        <item itemvalue="Application.ReceiptPage" />
-        <item itemvalue="Application.CashPage" />
       </list>
     </recent_temporary>
   </component>
