@@ -36,8 +36,10 @@ public class CardPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 ReceiptPage s = new ReceiptPage();
                 s.setVisible(true);
+
             }
         });
+
 
         // Event listener for pay now button: Will show pop up message saying thank you for shopping
         //If Card is denied: Denied message will appear
@@ -50,11 +52,7 @@ public class CardPage extends JFrame {
         });
     }
 
-    public static void main (String[] args) {
 
-        CardPage page = new CardPage();
-        page.setVisible(true);
-    }
 
 
 }

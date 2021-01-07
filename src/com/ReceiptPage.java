@@ -31,6 +31,7 @@ public class ReceiptPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 LandingPage s = new LandingPage();
                 s.setVisible(true);
+                dispose();
             }
         });
     }

@@ -35,6 +35,7 @@ public class AdminPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 LandingPage s = new LandingPage();
                 s.setVisible(true);
+                dispose();
             }
         });
 
@@ -46,19 +47,11 @@ public class AdminPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 StockdbPage s = new StockdbPage();
                 s.setVisible(true);
+                dispose();
             }
         });
     }
 
-
-
-
-
-    public static void main (String[] args) {
-
-        AdminPage page = new AdminPage();
-        page.setVisible(true);
-    }
 
 
 

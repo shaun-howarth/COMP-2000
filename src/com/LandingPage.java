@@ -35,6 +35,7 @@ public class LandingPage extends JFrame {
             public void actionPerformed(ActionEvent actionEvent) {
                 KioskPage s = new KioskPage();
                 s.setVisible(true);
+                dispose();
             }
         });
 
@@ -46,6 +47,7 @@ public class LandingPage extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 AdminPage s = new AdminPage();
                 s.setVisible(true);
+                dispose();
             }
         });
 
