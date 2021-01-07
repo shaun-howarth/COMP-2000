@@ -42,6 +42,7 @@ public class CashPage extends JFrame {
         });
 
         // Event listener for pay now button: Will show pop up message saying thank you for shopping
+        //If not enough cash is entered: Warning message will appear
 
         payBtn.addActionListener(new ActionListener() {
             @Override

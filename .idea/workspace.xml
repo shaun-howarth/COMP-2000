@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/CardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/CashPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CashPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PaymentPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/ReceiptPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ReceiptPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +31,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="212" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="143" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="144" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
