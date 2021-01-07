@@ -12,6 +12,8 @@ public class LandingPage extends JFrame {
     private JButton exitBtn;
 
     public LandingPage() {
+
+        setTitle("Landing Page");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
