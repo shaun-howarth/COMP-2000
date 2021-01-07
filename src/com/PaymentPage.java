@@ -13,6 +13,8 @@ public class PaymentPage extends JFrame {
 
 
     public PaymentPage() {
+
+        setTitle("Payment Page");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));

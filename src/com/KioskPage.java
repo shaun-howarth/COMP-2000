@@ -15,6 +15,8 @@ public class KioskPage extends JFrame {
 
 
     public KioskPage() {
+
+        setTitle("Kiosk User Interface");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));

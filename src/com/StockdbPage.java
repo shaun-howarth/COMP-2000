@@ -9,6 +9,8 @@ public class StockdbPage extends JFrame {
     private JButton homeBtn;
 
     public StockdbPage() {
+
+        setTitle("Stock Database Page");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));

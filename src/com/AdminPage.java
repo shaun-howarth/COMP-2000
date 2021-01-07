@@ -12,6 +12,8 @@ public class AdminPage extends JFrame {
 
 
     public AdminPage() {
+
+        setTitle("Admin Login Page: to view Stock Database");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));

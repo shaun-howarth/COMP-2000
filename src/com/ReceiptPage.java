@@ -9,6 +9,8 @@ public class ReceiptPage extends JFrame {
     private JButton homeBtn;
 
     public ReceiptPage() {
+
+        setTitle("Receipt Page");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
