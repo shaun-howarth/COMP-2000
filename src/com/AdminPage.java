@@ -11,6 +11,7 @@ public class AdminPage extends JFrame {
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JButton homeBtn;
+    private JPanel adminPanel;
 
 
     public AdminPage() {
@@ -53,6 +54,12 @@ public class AdminPage extends JFrame {
     }
 
 
+    public static void main(String[] args) {
+
+        AdminPage adminPage = new AdminPage();
+        adminPage.setVisible(true);
+
+    }
 
 
 }

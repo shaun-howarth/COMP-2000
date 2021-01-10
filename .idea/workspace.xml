@@ -3,12 +3,36 @@
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/CardPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/CardPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/CardPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/CardPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/CardPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/CardPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/ReceiptPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/ReceiptPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/ReceiptPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/ReceiptPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AdminPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CardPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CardPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/CardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CashPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CashPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CashPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CashPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/LandingPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PaymentPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/ReceiptPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ReceiptPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/ReceiptPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/ReceiptPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,42 +60,29 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="212" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="262" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="404" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
-  <component name="RunManager" selected="Application.LandingPage">
-    <configuration name="AdminPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.AdminPage" />
-      <module name="COMP-2000" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CardPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.CardPage" />
-      <module name="COMP-2000" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ReceiptPage">
     <configuration name="CashPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.CashPage" />
+      <module name="COMP-2000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KioskPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.KioskPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +107,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Main" />
+    <configuration name="PaymentPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.PaymentPage" />
+      <module name="COMP-2000" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReceiptPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ReceiptPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -111,10 +135,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReceiptPage" />
+        <item itemvalue="Application.PaymentPage" />
         <item itemvalue="Application.LandingPage" />
-        <item itemvalue="Application.CardPage" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.AdminPage" />
+        <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.CashPage" />
       </list>
     </recent_temporary>

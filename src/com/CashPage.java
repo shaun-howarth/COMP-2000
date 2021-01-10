@@ -12,6 +12,7 @@ public class CashPage extends JFrame {
     private JTextField cashField;
     private JTextArea pricetextArea;
     private JTextArea changetextArea;
+    private JPanel cashPanel;
 
 
     public CashPage() {
@@ -40,6 +41,7 @@ public class CashPage extends JFrame {
                 s.setVisible(true);
             }
         });
+
 
         // Event listener for pay now button: Will show pop up message saying thank you for shopping
         //If not enough cash is entered: Warning message will appear

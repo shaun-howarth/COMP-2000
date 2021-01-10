@@ -4,11 +4,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.logging.Logger;
+
 
 public class StockdbPage extends JFrame {
     private JPanel mainPanel;
-    private JTextArea stockArea;
     private JButton homeBtn;
+    private JTable stockTable;
+    private JButton viewStockBtn;
+    private JPanel stockPanel;
 
     public StockdbPage() {
 
@@ -17,6 +25,9 @@ public class StockdbPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
         pack();
+
+
+
 
         //Hover cursor effect for all Jbuttons
 
@@ -34,6 +45,11 @@ public class StockdbPage extends JFrame {
             }
         });
     }
+
+
+
+
+
 
     public static void main (String[] args) {
 

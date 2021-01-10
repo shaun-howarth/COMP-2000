@@ -12,6 +12,7 @@ public class KioskPage extends JFrame {
     private JTextArea scannedtextArea;
     private JTextArea pricetextArea;
     private JButton homeBtn;
+    private JPanel kioskPanel;
 
 
     public KioskPage() {

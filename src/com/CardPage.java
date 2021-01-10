@@ -11,6 +11,7 @@ public class CardPage extends JFrame {
     private JButton payBtn;
     private JTextArea verifytextArea;
     private JTextArea pricetextArea;
+    private JPanel cardPanel;
 
 
     public CardPage() {
@@ -50,6 +51,13 @@ public class CardPage extends JFrame {
                 JOptionPane.showMessageDialog(rootPane, "Thank you for shopping!");
             }
         });
+    }
+
+
+    public static void main(String[] args) {
+
+        CardPage cardPage = new CardPage();
+        cardPage.setVisible(true);
     }
 
 

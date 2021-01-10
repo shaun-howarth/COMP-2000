@@ -10,6 +10,7 @@ public class PaymentPage extends JFrame {
     private JButton cashBtn;
     private JButton cardBtn;
     private JTextArea totaltextArea;
+    private JPanel paymentPanel;
 
 
     public PaymentPage() {

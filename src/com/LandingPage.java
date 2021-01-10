@@ -10,6 +10,7 @@ public class LandingPage extends JFrame {
     private JButton kioskBtn;
     private JButton loginBtn;
     private JButton exitBtn;
+    private JPanel landingPanel;
 
     public LandingPage() {
 

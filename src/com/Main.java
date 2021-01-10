@@ -1,19 +1,32 @@
 package com;
 
+
+import java.io.File;
+
 public class Main {
 
 
     public static void main(String[] args) {
 
 
-        // Instantiation for AdminPage GUI
-
-        AdminPage adminPage = new AdminPage();
-        adminPage.setVisible(true);
+        // Instantiation for ... GUI/ will come back to
 
 
-        CardPage cardPage = new CardPage();
-        cardPage.setVisible(true);
+
+
+
+        /* SAVING & LOADING DATA FILE "data.csv" INTO APPLICATION */
+
+        File file = new File("resources\\data.csv");
+
+
+        if (file.exists()) {
+
+        } else {
+            System.out.println("This is not here");
+        }
+
 
     }
+
 }
