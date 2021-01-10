@@ -1,6 +1,7 @@
 package com;
 
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -17,6 +18,7 @@ public class StockdbPage extends JFrame {
     private JTable stockTable;
     private JButton viewStockBtn;
     private JPanel stockPanel;
+    private JPanel tablePanel;
 
     public StockdbPage() {
 
@@ -44,9 +46,58 @@ public class StockdbPage extends JFrame {
                 dispose();
             }
         });
+
+
+
+        //Calling method "createTable" to display field names for stock DB table
+        createTable();
+
+
+
+
+        viewStockBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                String filepath = "resources\\data.csv";
+                File file = new File(filepath);
+
+                try {
+                    BufferedReader br = new BufferedReader(new FileReader(file));
+                    String firstLine = br.readLine().trim();
+                    String[] columnsName = firstLine.split(",");
+                    DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
+                    model.setColumnIdentifiers();
+
+
+                } catch (FileNotFoundException ex) {
+                    Logger.getLogger(TextFileDataToJTable.class.getName()).log(level.SEVERE, null, ex);
+                }
+
+
+
+            }
+        });
+
+
+
+
     }
 
 
+    public JPanel getStockPanel (){
+        return tablePanel;
+    }
+
+
+
+    private void createTable() {
+        stockTable.setModel(new DefaultTableModel(
+                null,
+                new String[] {"Name", "Price", "Quantity", "Barcode"}
+        ));
+
+    }
 
 
 

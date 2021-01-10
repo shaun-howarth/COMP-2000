@@ -17,7 +17,7 @@ public class Main {
 
         /* SAVING & LOADING DATA FILE "data.csv" INTO APPLICATION */
 
-        File file = new File("resources\\data.csv");
+        File file = new File("resources\\");
 
 
         if (file.exists()) {
