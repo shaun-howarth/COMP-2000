@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 public class AdminPage extends JFrame {
     private JPanel mainPanel;
     private JButton loginBtn;
@@ -12,6 +13,7 @@ public class AdminPage extends JFrame {
     private JPasswordField passwordField;
     private JButton homeBtn;
     private JPanel adminPanel;
+    private JLabel success;
 
 
     public AdminPage() {
@@ -21,6 +23,7 @@ public class AdminPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
         pack();
+
 
 
         //Hover cursor effect for all Jbuttons
@@ -51,11 +54,30 @@ public class AdminPage extends JFrame {
                 dispose();
             }
         });
+
+
+        loginBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+
+            }
+        });
+
+
+
+
+
+
+
     }
 
 
-    public static void main(String[] args) {
 
+
+
+
+    public static void main(String[] args) {
         AdminPage adminPage = new AdminPage();
         adminPage.setVisible(true);
 

@@ -3,8 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/LandingPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AdminPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/LandingPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="212" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="278" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="299" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -52,8 +61,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LandingPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.LandingPage" />
+    <configuration name="KioskPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.KioskPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -65,8 +74,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PaymentPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.PaymentPage" />
+    <configuration name="LandingPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.LandingPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -107,10 +116,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AdminPage" />
-        <item itemvalue="Application.StockdbPage" />
+        <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.LandingPage" />
+        <item itemvalue="Application.StockdbPage" />
         <item itemvalue="Application.ReceiptPage" />
-        <item itemvalue="Application.PaymentPage" />
       </list>
     </recent_temporary>
   </component>

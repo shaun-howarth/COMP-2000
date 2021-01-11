@@ -74,6 +74,14 @@
               <text value="Home/Cancel"/>
             </properties>
           </component>
+          <component id="77bf4" class="javax.swing.JButton" binding="addBtn">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Add Item"/>
+            </properties>
+          </component>
         </children>
       </grid>
     </children>

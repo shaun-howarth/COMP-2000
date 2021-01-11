@@ -13,6 +13,7 @@ public class KioskPage extends JFrame {
     private JTextArea pricetextArea;
     private JButton homeBtn;
     private JPanel kioskPanel;
+    private JButton addBtn;
 
 
     public KioskPage() {
@@ -29,6 +30,7 @@ public class KioskPage extends JFrame {
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         paymentBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        addBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
         // Event listener for home button: to go to landing page
 
@@ -40,6 +42,7 @@ public class KioskPage extends JFrame {
                 dispose();
             }
         });
+
 
         // Event listener for payment button: to go to payment page
 
