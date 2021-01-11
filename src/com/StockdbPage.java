@@ -49,11 +49,11 @@ public class StockdbPage extends JFrame {
 
 
 
-        //Calling method "createTable" to display field names for stock DB table
 
 
 
 
+        //Action listener for "view stock button" to read in stock.txt flat data file into JTable
 
         viewStockBtn.addActionListener(new ActionListener() {
             @Override
@@ -90,16 +90,6 @@ public class StockdbPage extends JFrame {
 
 
     }
-
-
-    public JPanel getStockPanel (){
-        return tablePanel;
-    }
-
-
-
-
-
 
 
 
