@@ -5,11 +5,10 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
+import java.io.*;
+import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 
 public class StockdbPage extends JFrame {
@@ -34,6 +33,7 @@ public class StockdbPage extends JFrame {
         //Hover cursor effect for all Jbuttons
 
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        viewStockBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
         // Event listener for home button: will go to Landing Page
@@ -50,7 +50,7 @@ public class StockdbPage extends JFrame {
 
 
         //Calling method "createTable" to display field names for stock DB table
-        createTable();
+
 
 
 
@@ -59,7 +59,7 @@ public class StockdbPage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                String filepath = "resources\\data.csv";
+                String filepath = "resources\\stock.txt";
                 File file = new File(filepath);
 
                 try {
@@ -67,11 +67,18 @@ public class StockdbPage extends JFrame {
                     String firstLine = br.readLine().trim();
                     String[] columnsName = firstLine.split(",");
                     DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
-                    model.setColumnIdentifiers();
+                    model.setColumnIdentifiers(columnsName);
 
+                    Object[] tableLines = br.lines().toArray();
 
-                } catch (FileNotFoundException ex) {
-                    Logger.getLogger(TextFileDataToJTable.class.getName()).log(level.SEVERE, null, ex);
+                    for (int i =0; i <tableLines.length; i++) {
+                        String line = tableLines[i].toString().trim();
+                        String[] dataRow = line.split("/");
+                        model.addRow(dataRow);
+                    }
+
+                } catch (IOException ex) {
+                    Logger.getLogger(TextField.class.getName()).log(Level.SEVERE, null, ex);
                 }
 
 
@@ -91,13 +98,7 @@ public class StockdbPage extends JFrame {
 
 
 
-    private void createTable() {
-        stockTable.setModel(new DefaultTableModel(
-                null,
-                new String[] {"Name", "Price", "Quantity", "Barcode"}
-        ));
 
-    }
 
 
 
