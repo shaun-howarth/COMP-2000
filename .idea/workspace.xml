@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/LoginCredentials.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/LandingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/LandingPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stock.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AdminPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/LandingPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,18 +40,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="212" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="299" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="430" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
-  <component name="RunManager" selected="Application.AdminPage">
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.StockdbPage">
     <configuration name="AdminPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdminPage" />
       <module name="COMP-2000" />
@@ -115,10 +128,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StockdbPage" />
         <item itemvalue="Application.AdminPage" />
         <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.LandingPage" />
-        <item itemvalue="Application.StockdbPage" />
         <item itemvalue="Application.ReceiptPage" />
       </list>
     </recent_temporary>
