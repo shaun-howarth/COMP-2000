@@ -126,7 +126,7 @@ public class StockdbPage extends JFrame {
 
                         BufferedWriter bw = null;
                         bw = new BufferedWriter(new FileWriter("resources\\stock.txt", true));
-                        bw.write(nameField.getText() + "," + priceField.getText() + "," + quantityField.getText() + "," + barcodeField.getText());
+                        bw.write(nameField.getText() + "/" + priceField.getText() + "/" + quantityField.getText() + "/" + barcodeField.getText());
                         bw.newLine();
                         bw.flush();
                         bw.close();
