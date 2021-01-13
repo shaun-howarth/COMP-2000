@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.HashMap;
 
 
@@ -55,24 +57,7 @@ public class AdminPage extends JFrame {
         // Only if login is successful
 
 
-        loginBtn.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
 
-                if(e.getSource()==loginBtn) {
-                    String UserName = usernameField.getText();
-                    String Password = String.valueOf(passwordField.getPassword());
-
-                    if(logininfo.containsKey(UserName)) {
-                        if(logininfo.get(UserName).equals(Password)) {
-                            messageLabel.setForeground(Color.green);
-                            messageLabel.setText("Login Successful");
-
-                        }
-                    }
-                }
-            }
-        });
 
 
 
@@ -89,6 +74,28 @@ public class AdminPage extends JFrame {
         });
 
 
+        loginBtn.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                if(e.getSource()==loginBtn) {
+                    String UserName = usernameField.getText();
+                    String Password = String.valueOf(passwordField.getPassword());
+
+                    System.out.println(UserName);
+                    System.out.println(Password);
+
+                    if(logininfo.containsKey(UserName)) {
+                        if(logininfo.get(UserName).equals(Password)) {
+                            messageLabel.setForeground(Color.green);
+                            messageLabel.setText("Login Successful");
+
+                        }
+                    }
+                }
+            }
+        });
     }
 
 
@@ -109,6 +116,8 @@ public class AdminPage extends JFrame {
     public static void main(String[] args) {
         AdminPage adminPage = new AdminPage();
         adminPage.setVisible(true);
+
+
 
     }
 
