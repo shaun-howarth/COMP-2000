@@ -13,7 +13,7 @@ Password: Y$67975f
 
 
 
-The "kisokPage" which is the Kiosk user interface will enable a customer (non-admin user)
+The "kisokPage" which is the Kiosk user interface will enable a customer (non-admin user)to add products into their shopping basket from the stock db file. There will also be a display box to show the total price a customer will have to pay with their chosen items. A button will then take the customer to a payment screen where they will have the option to pay with cash or card.
 
 The two main design pattersn that are used in this application are......
 
