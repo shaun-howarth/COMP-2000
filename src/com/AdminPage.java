@@ -7,7 +7,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.HashMap;
+import java.util.Map;
 
+import static java.util.Map.entry;
 
 
 public class AdminPage extends JFrame {
@@ -28,6 +30,7 @@ public class AdminPage extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
         pack();
+
 
 
 
@@ -53,9 +56,6 @@ public class AdminPage extends JFrame {
             }
         });
 
-        // Event listener for admin login button: will go to stock DB
-        // Only if login is successful
-
 
 
 
@@ -74,6 +74,10 @@ public class AdminPage extends JFrame {
         });
 
 
+
+        // Event listener for admin login button: will go to stock DB
+        // Only if login is successful
+
         loginBtn.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -90,6 +94,7 @@ public class AdminPage extends JFrame {
                         if(logininfo.get(UserName).equals(Password)) {
                             messageLabel.setForeground(Color.green);
                             messageLabel.setText("Login Successful");
+                            StockdbPage stockdbPage = new StockdbPage();
 
                         }
                     }
@@ -100,9 +105,14 @@ public class AdminPage extends JFrame {
 
 
 
-    HashMap<String,String> logininfo = new HashMap<String,String>();
+    Map<String, String> logininfo = Map.ofEntries(
+            entry("a", "jasmith"),
+            entry("b", "canErty6"),
+            entry("c", "apbellow"),
+            entry("d", "Y$67975f")
+    );
 
-    AdminPage(HashMap<String,String> loginInfoOriginal) {
+    AdminPage(Map loginInfoOriginal) {
         logininfo = loginInfoOriginal;
 
     }

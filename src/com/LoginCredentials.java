@@ -1,10 +1,20 @@
 package com;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.lang.String;
+import static java.util.Map.entry;
 
 public class LoginCredentials {
 
-    HashMap<String,String> logininfo = new HashMap<String,String>();
+    Map<String, String> logininfo = Map.ofEntries(
+            entry("a", "jasmith"),
+            entry("b", "canErty6"),
+            entry("c", "apbellow"),
+            entry("d", "Y$67975f")
+
+    );
+
 
     LoginCredentials() {
 
@@ -13,8 +23,10 @@ public class LoginCredentials {
     }
 
 
-    protected HashMap<String, String> getLoginInfo() {
+    protected Map<String, String> getLoginInfo() {
+
         return logininfo;
+
     }
 
 }

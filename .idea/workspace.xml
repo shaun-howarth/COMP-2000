@@ -4,12 +4,17 @@
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/AdminPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/LoginCredentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/LoginCredentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/stock.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stock.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/AdminPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/AdminPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/LoginCredentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LoginCredentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +58,7 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LandingPage">
+  <component name="RunManager" selected="Application.AdminPage">
     <configuration name="AdminPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdminPage" />
       <module name="COMP-2000" />
@@ -93,8 +98,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReceiptPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ReceiptPage" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.Main" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -121,11 +126,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LandingPage" />
-        <item itemvalue="Application.StockdbPage" />
         <item itemvalue="Application.AdminPage" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.StockdbPage" />
+        <item itemvalue="Application.LandingPage" />
         <item itemvalue="Application.KioskPage" />
-        <item itemvalue="Application.ReceiptPage" />
       </list>
     </recent_temporary>
   </component>
