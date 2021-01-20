@@ -89,14 +89,21 @@ public class AdminPage extends JFrame {
 
 
 
-
                     if(logininfo.containsKey(UserName)) {
                         if(logininfo.get(UserName).equals(Password)) {
                             messageLabel.setForeground(Color.green);
-                            messageLabel.setText("Login Successful");
+                            messageLabel.setText("Login Successful!");
                             StockdbPage stockdbPage = new StockdbPage();
-
+                            stockdbPage.setVisible(true);
                         }
+                        else {
+                            messageLabel.setForeground(Color.red);
+                            messageLabel.setText("Wrong Password.");
+                        }
+                    }
+                    else {
+                        messageLabel.setForeground(Color.red);
+                        messageLabel.setText("Username not found.");
                     }
                 }
             }
@@ -110,13 +117,11 @@ public class AdminPage extends JFrame {
             entry("apbellow", "Y$67975f")
     );
 
-    AdminPage(Map loginInfoOriginal) {
+
+    AdminPage(Map<String, String> loginInfoOriginal) {
         logininfo = loginInfoOriginal;
 
     }
-
-
-
 
 
 
