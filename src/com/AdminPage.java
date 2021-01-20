@@ -87,8 +87,8 @@ public class AdminPage extends JFrame {
                     String UserName = usernameField.getText();
                     String Password = String.valueOf(passwordField.getPassword());
 
-                    System.out.println(UserName);
-                    System.out.println(Password);
+
+
 
                     if(logininfo.containsKey(UserName)) {
                         if(logininfo.get(UserName).equals(Password)) {
@@ -106,10 +106,8 @@ public class AdminPage extends JFrame {
 
 
     Map<String, String> logininfo = Map.ofEntries(
-            entry("a", "jasmith"),
-            entry("b", "canErty6"),
-            entry("c", "apbellow"),
-            entry("d", "Y$67975f")
+            entry("jasmith", "canErty6"),
+            entry("apbellow", "Y$67975f")
     );
 
     AdminPage(Map loginInfoOriginal) {
