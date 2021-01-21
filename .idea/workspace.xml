@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/CardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/CashPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CashPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CardPage.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CardPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CashPage.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/CashPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/PaymentPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/PaymentPage.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +54,7 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KioskPage">
+  <component name="RunManager" selected="Application.LandingPage">
     <configuration name="AdminPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdminPage" />
       <module name="COMP-2000" />
@@ -118,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.LandingPage" />
+        <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.AdminPage" />
         <item itemvalue="Application.StockdbPage" />
         <item itemvalue="Application.Main" />

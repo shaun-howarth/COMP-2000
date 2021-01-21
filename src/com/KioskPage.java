@@ -24,8 +24,8 @@ public class KioskPage extends JFrame {
     private JPanel kioskPanel;
     private JButton scanBtn;
     private JTable productsTable;
-    private JTable basketTable;
     private JButton productsBtn;
+    private JTextArea textArea1;
 
 
     public KioskPage() {
@@ -59,8 +59,7 @@ public class KioskPage extends JFrame {
         paymentBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                PaymentPage s = new PaymentPage();
-                s.setVisible(true);
+
             }
         });
 
