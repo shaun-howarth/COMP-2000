@@ -60,8 +60,6 @@ public class AdminPage extends JFrame {
 
 
 
-
-
         resetBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -93,8 +91,9 @@ public class AdminPage extends JFrame {
                         if(logininfo.get(UserName).equals(Password)) {
                             messageLabel.setForeground(Color.green);
                             messageLabel.setText("Login Successful!");
-                            StockdbPage stockdbPage = new StockdbPage();
+                            StockdbPage stockdbPage = new StockdbPage(UserName);
                             stockdbPage.setVisible(true);
+                            dispose();
                         }
                         else {
                             messageLabel.setForeground(Color.red);

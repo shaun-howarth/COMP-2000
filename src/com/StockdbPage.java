@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 
 
 
+
 public class StockdbPage extends JFrame {
     private JPanel mainPanel;
     private JButton homeBtn;
@@ -25,8 +26,9 @@ public class StockdbPage extends JFrame {
     private JTextField priceField;
     private JTextField quantityField;
     private JTextField barcodeField;
+    private JLabel welcomeLabel;
 
-    public StockdbPage() {
+    public StockdbPage(String UserName) {
 
         setTitle("Stock Database Page");
         setContentPane(mainPanel);
@@ -34,6 +36,8 @@ public class StockdbPage extends JFrame {
         setPreferredSize(new Dimension(800, 600));
         pack();
 
+
+        welcomeLabel.setText("Hello "+UserName);
 
 
 
@@ -142,7 +146,10 @@ public class StockdbPage extends JFrame {
         });
 
 
+    }
 
+
+    public StockdbPage() {
     }
 
 
@@ -151,7 +158,6 @@ public class StockdbPage extends JFrame {
         StockdbPage page = new StockdbPage();
         page.setVisible(true);
     }
-
 
 
 }
