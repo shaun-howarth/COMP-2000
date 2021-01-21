@@ -68,6 +68,14 @@ public class KioskPage extends JFrame {
 
 
 
+        String[] columnIdentifiers = new String[]{"Name", "Price (£)", "Quantity Remaining", "Barcode"};
+        DefaultTableModel model = new DefaultTableModel();
+        model.setColumnIdentifiers(columnIdentifiers);
+        productsTable.setModel(model);
+        productsTable.getTableHeader().setReorderingAllowed(false);
+
+
+
         // Event listener for View Products button
         // Customers press the "View Products" buttons to see products they want to scan from the stock list
 
@@ -99,11 +107,6 @@ public class KioskPage extends JFrame {
         });
 
 
-
-
-        DefaultTableModel model = new DefaultTableModel();
-        productsTable.setModel(model);
-        productsTable.getTableHeader().setReorderingAllowed(false);
 
 
 
