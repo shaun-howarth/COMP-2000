@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+
 public class KioskPage extends JFrame {
     private JPanel mainPanel;
     private JButton removeBtn;
@@ -37,14 +38,13 @@ public class KioskPage extends JFrame {
 
 
         //Hover cursor effect for all Jbuttons
-
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         paymentBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         scanBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
-        // Event listener for home button: to go to landing page
 
+        // Event listener for home button: to go to landing page
         homeBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -56,7 +56,6 @@ public class KioskPage extends JFrame {
 
 
         // Event listener for payment button: to go to payment page
-
         paymentBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -134,8 +133,6 @@ public class KioskPage extends JFrame {
                 }
             }
         });
-
-
 
     }
 

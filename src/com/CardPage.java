@@ -18,7 +18,7 @@ public class CardPage extends JFrame {
 
         setTitle("Card Payment Page");
         setContentPane(mainPanel);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setPreferredSize(new Dimension(800, 600));
         pack();
 
