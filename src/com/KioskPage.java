@@ -19,13 +19,16 @@ import java.util.logging.Logger;
 public class KioskPage extends JFrame {
     private JPanel mainPanel;
     private JButton removeBtn;
-    private JButton paymentBtn;
+    private JButton cashBtn;
     private JButton homeBtn;
     private JPanel kioskPanel;
     private JButton scanBtn;
     private JTable productsTable;
     private JButton productsBtn;
-    private JTextArea textArea1;
+    private JTextArea listArea;
+    private JButton cardBtn;
+    private JTextField productField;
+    private JTextField quantityField;
 
 
     public KioskPage() {
@@ -39,7 +42,7 @@ public class KioskPage extends JFrame {
 
         //Hover cursor effect for all Jbuttons
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        paymentBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        cashBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         scanBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
@@ -56,7 +59,7 @@ public class KioskPage extends JFrame {
 
 
         // Event listener for payment button: to go to payment page
-        paymentBtn.addActionListener(new ActionListener() {
+        cashBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
@@ -113,7 +116,7 @@ public class KioskPage extends JFrame {
                 TableModel model1 = productsTable.getModel();
                 int[] indexes = productsTable.getSelectedRows();
                 Object[] row = new Object[13];
-                DefaultTableModel model2 = (DefaultTableModel) basketTable.getModel();
+                DefaultTableModel model2 = (DefaultTableModel) listArea.();
                 for (int i = 0; i < indexes.length; i++) {
                     row[0] = model1.getValueAt(indexes[i], 0);
                     row[1] = model1.getValueAt(indexes[i], 1);
