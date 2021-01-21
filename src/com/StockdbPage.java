@@ -57,6 +57,16 @@ public class StockdbPage extends JFrame {
         });
 
 
+        // Defining Model object for Data that can be read into Stock JTable
+        //Placing named for Column header names in Stock table
+        String[] columnIdentifiers = new String[]{"Name", "Price (£)", "Quantity Remaining", "Barcode"};
+        DefaultTableModel model = new DefaultTableModel();
+        model.setColumnIdentifiers(columnIdentifiers);
+        stockTable.setModel(model);
+        stockTable.getTableHeader().setReorderingAllowed(false);
+
+
+
         //Event listener for "view stock button" to read in stock.txt flat data file into JTable
         viewStockBtn.addActionListener(new ActionListener() {
             @Override
@@ -86,10 +96,6 @@ public class StockdbPage extends JFrame {
         });
 
 
-        // Defining Model object for Data that can be read into Stock JTable
-        DefaultTableModel model = new DefaultTableModel();
-        stockTable.setModel(model);
-        stockTable.getTableHeader().setReorderingAllowed(false);
 
 
         //Event Listener for Add stock item button
