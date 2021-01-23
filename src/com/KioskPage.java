@@ -118,9 +118,45 @@ public class KioskPage extends JFrame {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
+                DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
+                int Item = productsTable.getSelectedRow();
+
+                double cost;
+                double productTot;
+                double fCost;
+                String pName;
+                String pQuantity;
+
+                pName = model.getValueAt(Item, 1).toString();
+                pQuantity = model.getValueAt(Item, 2).toString();
+                cost = Double.parseDouble(model.getValueAt(Item, 3).toString());
+                productTot = cost * Integer.parseInt(quantityField.getText());
+
+                if (productField.getText().isEmpty() || quantityField.getText().isEmpty())
+                {
+                    JOptionPane.showMessageDialog(null, "Missing Data");
+                }
+
+                else{
+                    if(listArea.getText().contains("  ==========JAVA-STORE==========\n"))
+                    {
+                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT  PRICE(£)  QUANTITY TOTAL\n" + productField.getText() + "        " + quantityField.getText() + "        " + productsTable.getValueAt(Item, 3) + "        " + Double.toString(productTot) + "\n");
+                    }
+                    else{
+
+                    }
+
+
+
+
+
+                }
+
+
 
             }
         });
+
 
     }
 
