@@ -2,7 +2,6 @@ package com;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,7 +17,7 @@ import java.util.logging.Logger;
 
 public class KioskPage extends JFrame {
     private JPanel mainPanel;
-    private JButton removeBtn;
+    private JButton clearBtn;
     private JButton cashBtn;
     private JButton homeBtn;
     private JPanel kioskPanel;
@@ -44,7 +43,7 @@ public class KioskPage extends JFrame {
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         cashBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         cardBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        clearBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         scanBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         productsBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
@@ -123,14 +122,9 @@ public class KioskPage extends JFrame {
 
                 double cost;
                 double productTot;
-                double fCost;
-                String pName;
-                String pQuantity;
 
-                pName = model.getValueAt(Item, 1).toString();
-                pQuantity = model.getValueAt(Item, 2).toString();
-                cost = Double.parseDouble(model.getValueAt(Item, 3).toString());
-                productTot = cost * Integer.parseInt(quantityField.getText());
+                cost = Double.parseDouble(model.getValueAt(Item, 1).toString());
+                productTot = cost * Double.parseDouble(quantityField.getText());
 
                 if (productField.getText().isEmpty() || quantityField.getText().isEmpty())
                 {
@@ -138,21 +132,17 @@ public class KioskPage extends JFrame {
                 }
 
                 else{
-                    if(listArea.getText().contains("  ==========JAVA-STORE==========\n"))
+                    if(!listArea.getText().contains("  ==========JAVA-STORE==========\n"))
                     {
-                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT  PRICE(£)  QUANTITY TOTAL\n" + productField.getText() + "        " + quantityField.getText() + "        " + productsTable.getValueAt(Item, 3) + "        " + Double.toString(productTot) + "\n");
+                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT    PRICE(£)    QUANTITY    TOTAL\n" + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
                     }
                     else{
+                        listArea.setText(listArea.getText() + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
 
                     }
-
-
-
 
 
                 }
-
-
 
             }
         });
