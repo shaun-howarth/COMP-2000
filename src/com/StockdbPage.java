@@ -56,8 +56,8 @@ public class StockdbPage extends JFrame {
             }
         });
 
-
-        // Defining Model object for Data that can be read into Stock JTable
+        //Creates table
+        // Defining Model object for Data that can be read in/written from Stock JTable
         //Placing named for Column header names in Stock table
         String[] columnIdentifiers = new String[]{"Name", "Price (£)", "Quantity Remaining", "Barcode"};
         DefaultTableModel model = new DefaultTableModel();

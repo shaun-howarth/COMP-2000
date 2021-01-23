@@ -43,8 +43,10 @@ public class KioskPage extends JFrame {
         //Hover cursor effect for all Jbuttons
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         cashBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        cardBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         scanBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        productsBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
         // Event listener for home button: to go to landing page
@@ -67,7 +69,9 @@ public class KioskPage extends JFrame {
         });
 
 
-
+        //Creates table
+        // Defining Model object for Data that can be read in/written from Products JTable
+        //Placing named for Column header names in Stock table
         String[] columnIdentifiers = new String[]{"Name", "Price (£)", "Quantity Remaining", "Barcode"};
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(columnIdentifiers);
