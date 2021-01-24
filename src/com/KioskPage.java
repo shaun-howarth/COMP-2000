@@ -120,10 +120,13 @@ public class KioskPage extends JFrame {
                 DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
                 int Item = productsTable.getSelectedRow();
 
+                String pName;
+                String pQuantity;
                 double cost;
                 double productTot;
-
+                pName = model.getValueAt(Item, 0).toString();
                 cost = Double.parseDouble(model.getValueAt(Item, 1).toString());
+                pQuantity = model.getValueAt(Item, 3).toString();
                 productTot = cost * Double.parseDouble(quantityField.getText());
 
                 if (productField.getText().isEmpty() || quantityField.getText().isEmpty())
@@ -134,7 +137,7 @@ public class KioskPage extends JFrame {
                 else{
                     if(!listArea.getText().contains("  ==========JAVA-STORE==========\n"))
                     {
-                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT    PRICE(£)    QUANTITY    TOTAL\n" + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
+                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT    QUANTITY    PRICE(£)    TOTAL\n" + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
                     }
                     else{
                         listArea.setText(listArea.getText() + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
@@ -148,6 +151,14 @@ public class KioskPage extends JFrame {
         });
 
 
+        clearBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(e.getSource()==clearBtn) {
+                    listArea.setText("");
+                }
+            }
+        });
     }
 
 
