@@ -151,12 +151,27 @@ public class KioskPage extends JFrame {
         });
 
 
+
         clearBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 if(e.getSource()==clearBtn) {
                     listArea.setText("");
                 }
+            }
+        });
+
+
+
+        productsTable.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
+                int selectedRowIndex = productsTable.getSelectedRow();
+
+                productField.setText(model.getValueAt(selectedRowIndex, 0).toString());
             }
         });
     }
