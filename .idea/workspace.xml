@@ -4,6 +4,7 @@
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stock.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

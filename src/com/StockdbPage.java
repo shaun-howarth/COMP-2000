@@ -27,6 +27,7 @@ public class StockdbPage extends JFrame {
     private JLabel welcomeLabel;
     private JButton removeBtn;
     private JButton updateBtn;
+    private JButton emptyBtn;
 
     public StockdbPage(String UserName) {
 
@@ -46,6 +47,10 @@ public class StockdbPage extends JFrame {
         homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         viewStockBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         addBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        emptyBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        updateBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+
 
 
         // Event listener for home button: will go to Landing Page
@@ -97,6 +102,18 @@ public class StockdbPage extends JFrame {
             }
         });
 
+        emptyBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (e.getSource()==emptyBtn) {
+                    nameField.setText("");
+                    priceField.setText("");
+                    quantityField.setText("");
+                    barcodeField.setText("");
+                    JOptionPane.showMessageDialog(null, "Fields Clear: You can now enter new product details to create a new product row within the table!");
+                }
+            }
+        });
 
 
 
@@ -150,10 +167,10 @@ public class StockdbPage extends JFrame {
                 } else {
                     if (stockTable.getRowCount() == 0) {
                         // if table is empty with (no data): display error message
-                        JOptionPane.showMessageDialog(null, "Table is Empty.");
+                        JOptionPane.showMessageDialog(null, "Table is Empty!");
                     } else {
                         // if table is not empty or a row hasn't been selected or multiple rows have been selected
-                        JOptionPane.showMessageDialog(null, "Please select an individual row for Deletion");
+                        JOptionPane.showMessageDialog(null, "Please select an individual row for Deletion!");
                     }
                 }
             }
@@ -173,6 +190,7 @@ public class StockdbPage extends JFrame {
                     model.setValueAt(priceField.getText(), i, 1);
                     model.setValueAt(quantityField.getText(), i, 2);
                     model.setValueAt(barcodeField.getText(), i, 3);
+                    JOptionPane.showMessageDialog(null, "Product Information Updated: Please note, whatever input was made into each of the text fields above will be printed into Product Row!");
                 }else {
                     JOptionPane.showMessageDialog(null, "Error!");
                 }
@@ -206,7 +224,6 @@ public class StockdbPage extends JFrame {
 
 
     public StockdbPage() {
-
     }
 
     public static void main (String[] args) {
