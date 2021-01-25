@@ -25,6 +25,8 @@ public class StockdbPage extends JFrame {
     private JTextField quantityField;
     private JTextField barcodeField;
     private JLabel welcomeLabel;
+    private JButton removeBtn;
+    private JButton updateBtn;
 
     public StockdbPage(String UserName) {
 
@@ -129,13 +131,55 @@ public class StockdbPage extends JFrame {
                 }
             }
         });
+
+
+
+
+
+        removeBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
+
+                //delete row
+                if (stockTable.getSelectedRowCount() == 1) {
+                    //if single row is selected then delete
+                    model.removeRow(stockTable.getSelectedRow());
+
+                } else {
+                    if (stockTable.getRowCount() == 0) {
+                        // if table is empty with (no data): display error message
+                        JOptionPane.showMessageDialog(null, "Table is Empty.");
+                    } else {
+                        // if table is not empty or a row hasn't been selected or multiple rows have been selected
+                        JOptionPane.showMessageDialog(null, "Please select an individual row for Deletion");
+                    }
+                }
+            }
+        });
+
+
+        stockTable.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+
+                DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
+                int selectedRowIndex = stockTable.getSelectedRow();
+
+                nameField.setText(model.getValueAt(selectedRowIndex, 0).toString());
+                priceField.setText(model.getValueAt(selectedRowIndex, 1).toString());
+                quantityField.setText(model.getValueAt(selectedRowIndex, 2).toString());
+                barcodeField.setText(model.getValueAt(selectedRowIndex, 3).toString());
+
+            }
+        });
+
     }
 
 
-    //Constructor for StockdbPage
     public StockdbPage() {
     }
-
 
     public static void main (String[] args) {
 
