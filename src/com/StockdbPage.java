@@ -145,6 +145,7 @@ public class StockdbPage extends JFrame {
                 if (stockTable.getSelectedRowCount() == 1) {
                     //if single row is selected then delete
                     model.removeRow(stockTable.getSelectedRow());
+                    JOptionPane.showMessageDialog(null, "Product removed from Stock Table!");
 
                 } else {
                     if (stockTable.getRowCount() == 0) {
@@ -154,6 +155,26 @@ public class StockdbPage extends JFrame {
                         // if table is not empty or a row hasn't been selected or multiple rows have been selected
                         JOptionPane.showMessageDialog(null, "Please select an individual row for Deletion");
                     }
+                }
+            }
+        });
+
+
+        updateBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
+                int i = stockTable.getSelectedRow();
+
+                if (i >=0)
+                {
+                    model.setValueAt(nameField.getText(), i, 0);
+                    model.setValueAt(priceField.getText(), i, 1);
+                    model.setValueAt(quantityField.getText(), i, 2);
+                    model.setValueAt(barcodeField.getText(), i, 3);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Error!");
                 }
             }
         });
@@ -178,7 +199,14 @@ public class StockdbPage extends JFrame {
     }
 
 
+
+
+
+
+
+
     public StockdbPage() {
+
     }
 
     public static void main (String[] args) {
