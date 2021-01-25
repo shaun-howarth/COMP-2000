@@ -137,10 +137,10 @@ public class KioskPage extends JFrame {
                 else{
                     if(!listArea.getText().contains("  ==========JAVA-STORE==========\n"))
                     {
-                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT    QUANTITY    PRICE(£)    TOTAL\n" + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
+                        listArea.setText(listArea.getText()+"  ==========JAVA-STORE==========\n"+"PRODUCT      QUANTITY                              PRICE(£)                              BARCODE                         TOTAL\n\n" + productField.getText() + "  " + quantityField.getText() + "  " + productsTable.getValueAt(Item, 1) + "  " + productsTable.getValueAt(Item, 3) + "          " + productTot + "\n");
                     }
                     else{
-                        listArea.setText(listArea.getText() + productField.getText() + "                    " + quantityField.getText() + "                    " + productsTable.getValueAt(Item, 1) + "                    " + productTot + "\n");
+                        listArea.setText(listArea.getText() + productField.getText() + "  " + quantityField.getText() + "  " + productsTable.getValueAt(Item, 1) + "  " + productsTable.getValueAt(Item, 3) + "          " + productTot + "\n");
 
                     }
 
