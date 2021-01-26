@@ -35,11 +35,11 @@ public class StockdbPage extends JFrame {
         setTitle("Stock Database Page");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setPreferredSize(new Dimension(1500, 300));
+        setPreferredSize(new Dimension(800, 800));
         pack();
 
 
-        // Customisation of text for welcomeLabel for logged in user
+        // Customisation of text for welcomeLabel for logged in admin user
         welcomeLabel.setText("Hello "+UserName);
         welcomeLabel.setFont(new Font(null,Font.ITALIC,25));
 
@@ -53,7 +53,6 @@ public class StockdbPage extends JFrame {
         removeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
-
         // Event listener for home button: will go to Landing Page
         homeBtn.addActionListener(new ActionListener() {
             @Override
@@ -64,15 +63,15 @@ public class StockdbPage extends JFrame {
             }
         });
 
+
         //Creates table
-        // Defining Model object for Data that can be read in/written from Stock JTable
+        //Defining Model object for Data that can be read in/written from Stock JTable
         //Placing named for Column header names in Stock table
         String[] columnIdentifiers = new String[]{"Name", "Price (£)", "Quantity Remaining", "Barcode"};
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(columnIdentifiers);
         stockTable.setModel(model);
         stockTable.getTableHeader().setReorderingAllowed(false);
-
 
 
         //Event listener for "view stock button" to read in stock.txt flat data file into JTable
@@ -86,12 +85,13 @@ public class StockdbPage extends JFrame {
                 try {
                     BufferedReader br = new BufferedReader(new FileReader(file));
                     String firstLine = br.readLine().trim();
+                    //BufferReader identifies column separators by scanning for "," characters between each column field as written within the .txt file
                     String[] columnsName = firstLine.split(",");
                     DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
                     model.setColumnIdentifiers(columnsName);
 
+                    //BufferReader identifies row separators by scanning for "/" characters between each table row as written within the .txt file
                     Object[] tableLines = br.lines().toArray();
-
                     for (int i =0; i <tableLines.length; i++) {
                         String line = tableLines[i].toString().trim();
                         String[] dataRow = line.split("/");
@@ -103,6 +103,8 @@ public class StockdbPage extends JFrame {
             }
         });
 
+
+        //Event Listener for empty fields button for adding new product and it's details to Stock table and database
         emptyBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -117,23 +119,21 @@ public class StockdbPage extends JFrame {
         });
 
 
-
         //Event Listener for Add stock item button
         addBtn.addMouseListener(new MouseAdapter() {
             @Override
-
             //Method used to pass through and add/write data to "stock.txt" file when JText fields are filled.
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                //Message warning to show JText Fields are null upon leaving JTextFields blank when clicking add item button.
+
                 if (nameField.getText().isEmpty() || priceField.getText().isEmpty() || quantityField.getText().isEmpty() || barcodeField.getText().isEmpty()) {
+                    //Message warning to show JText Fields are null upon leaving JTextFields blank when clicking add item button.
                     JOptionPane.showMessageDialog(null, "All Fields must be filled");
                 } else {
-
                     try {
                         model.addRow(new Object[]{nameField.getText(), priceField.getText(), quantityField.getText(), barcodeField.getText()});
 
-                        //BufferWriter instruction used to take string values entered into JText fields
+                        //BufferWriter instruction used to take string values entered into JText fields and add them into the stock.txt file via JTable
                         BufferedWriter bw = null;
                         bw = new BufferedWriter(new FileWriter("resources\\stock.txt", true));
                         bw.write(nameField.getText() + "/" + priceField.getText() + "/" + quantityField.getText() + "/" + barcodeField.getText());
@@ -145,15 +145,12 @@ public class StockdbPage extends JFrame {
                     } catch (Exception event) {
                         event.printStackTrace();
                     }
-
                 }
             }
         });
 
 
-
-
-
+        //Event Listener for remove stock button: removes selected product row from table
         removeBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -178,6 +175,7 @@ public class StockdbPage extends JFrame {
         });
 
 
+        //Event Listener for update stock button: updates product row details using text fields when a table row is selected
         updateBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -185,6 +183,7 @@ public class StockdbPage extends JFrame {
                 DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
                 int i = stockTable.getSelectedRow();
 
+                //if statement for setting product row columns to text value entered into each of the text fields
                 if (i >=0)
                 {
                     model.setValueAt(nameField.getText(), i, 0);
@@ -199,11 +198,13 @@ public class StockdbPage extends JFrame {
         });
 
 
+        //Event Listener for stockTable
         stockTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
+                //Code used to get the product column characters to make them appear within each of the text fields when a product is selected
                 DefaultTableModel model = (DefaultTableModel) stockTable.getModel();
                 int selectedRowIndex = stockTable.getSelectedRow();
 
@@ -211,27 +212,19 @@ public class StockdbPage extends JFrame {
                 priceField.setText(model.getValueAt(selectedRowIndex, 1).toString());
                 quantityField.setText(model.getValueAt(selectedRowIndex, 2).toString());
                 barcodeField.setText(model.getValueAt(selectedRowIndex, 3).toString());
-
             }
         });
-
     }
 
 
-
-
-
-
-
-
+    //Constructor for StockdbPage used for HASHMAP log in system
     public StockdbPage() {
     }
+
 
     public static void main (String[] args) {
 
         StockdbPage page = new StockdbPage();
         page.setVisible(true);
     }
-
-
 }

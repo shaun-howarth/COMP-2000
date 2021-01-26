@@ -176,7 +176,7 @@ public class KioskPage extends JFrame {
                 super.mouseClicked(e);
 
                 DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
-                //Variable "selectedRowIndex" used to set the selected row value into productField
+                //Variable "selectedRowIndex" used to set the selected row value(characters) into productField
                 int selectedRowIndex = productsTable.getSelectedRow();
 
                 //product name being at column "0" in JTable to be displayed in productField when product is selected
