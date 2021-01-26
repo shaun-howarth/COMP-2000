@@ -29,12 +29,13 @@ public class StockdbPage extends JFrame {
     private JButton updateBtn;
     private JButton emptyBtn;
 
+
     public StockdbPage(String UserName) {
 
         setTitle("Stock Database Page");
         setContentPane(mainPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setPreferredSize(new Dimension(800, 600));
+        setPreferredSize(new Dimension(1500, 300));
         pack();
 
 

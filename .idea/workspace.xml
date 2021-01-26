@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/CardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/CashPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/CashPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/LandingPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/LandingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/LandingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
