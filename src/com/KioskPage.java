@@ -68,6 +68,16 @@ public class KioskPage extends JFrame {
         });
 
 
+        cardBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+                CardPage s = new CardPage();
+                s.setVisible(true);
+            }
+        });
+
+
         //Creates table
         // Defining Model object for Data that can be read in/written from Products JTable
         //Placing named for Column header names in Stock table
@@ -180,6 +190,9 @@ public class KioskPage extends JFrame {
 
             }
         });
+
+
+
     }
 
 
