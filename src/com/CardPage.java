@@ -9,7 +9,7 @@ public class CardPage extends JFrame {
     private JPanel mainPanel;
     private JPanel cardPanel;
     private JButton payBtn;
-    private JTextArea textArea1;
+    private JTextArea cardArea;
 
 
     public CardPage() {

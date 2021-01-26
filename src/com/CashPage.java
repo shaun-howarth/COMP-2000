@@ -9,13 +9,14 @@ public class CashPage extends JFrame {
     private JPanel mainPanel;
     private JPanel cashPanel;
     private JButton payBtn;
-    private JTextField textField1;
+    private JTextField cashField;
 
 
     public CashPage() {
 
         setTitle("Cash Page");
         setContentPane(mainPanel);
+        setContentPane(cashPanel);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setPreferredSize(new Dimension(400,400));
         pack();
@@ -27,7 +28,11 @@ public class CashPage extends JFrame {
         payBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Cash entered: Please await change if any!");
+                if (cashField.getText().isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Please enter cash amount!");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Cash entered: Please await change if any!");
+                }
             }
         });
     }
