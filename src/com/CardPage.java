@@ -22,10 +22,11 @@ public class CardPage extends JFrame {
         pack();
 
 
+        //Hover cursor effect for all Jbuttons
         payBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
-
+        //Event listener for Pay Now button
         payBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

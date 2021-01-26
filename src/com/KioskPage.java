@@ -35,8 +35,9 @@ public class KioskPage extends JFrame {
 
         setTitle("Kiosk User Interface");
         setContentPane(mainPanel);
+        setContentPane(kioskPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setPreferredSize(new Dimension(1200, 800));
+        setPreferredSize(new Dimension(1400, 800));
         pack();
 
 
@@ -60,7 +61,7 @@ public class KioskPage extends JFrame {
         });
 
 
-        // Event listener for payment button: to go to payment page
+        // Event listener for pay cash button: to go to cash page
         cashBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -70,6 +71,7 @@ public class KioskPage extends JFrame {
         });
 
 
+        // Event listener for pay card button: to go to card page
         cardBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -82,7 +84,7 @@ public class KioskPage extends JFrame {
 
         //Creates table
         // Defining Model object for Data that can be read in/written from Products JTable
-        //Placing named for Column header names in Stock table
+        //Placing string values for Column header names in Stock table
         String[] columnIdentifiers = new String[]{"Name", "Price (£)", "Quantity Remaining", "Barcode"};
         DefaultTableModel model = new DefaultTableModel();
         model.setColumnIdentifiers(columnIdentifiers);
@@ -90,12 +92,11 @@ public class KioskPage extends JFrame {
         productsTable.getTableHeader().setReorderingAllowed(false);
 
 
-
         // Event listener for View Products button
         // Customers press the "View Products" buttons to see products they want to scan from the stock list
-
         productsBtn.addActionListener(new ActionListener() {
             @Override
+            //Method used to read in data from text to JTable on GUI form.
             public void actionPerformed(ActionEvent e) {
                 String filepath = "resources\\stock.txt";
                 File file = new File(filepath);
@@ -122,26 +123,20 @@ public class KioskPage extends JFrame {
         });
 
 
-
-
-
+        //Event Listener for scan product button
         scanBtn.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
                 DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
+
+                //variables for if statement used to display values in kiosk listArea
                 int Item = productsTable.getSelectedRow();
-
-
                 double cost;
                 double productTot;
 
-
                 cost = Double.parseDouble(model.getValueAt(Item, 1).toString());
-
                 productTot = cost * Double.parseDouble(quantityField.getText());
-
-
 
 
                 if (productField.getText().isEmpty() || quantityField.getText().isEmpty())
@@ -158,15 +153,12 @@ public class KioskPage extends JFrame {
                         listArea.setText(listArea.getText() + productField.getText() + "  " + quantityField.getText() + "  " + productsTable.getValueAt(Item, 1) + "  " + productsTable.getValueAt(Item, 3) + "          " + productTot + "\n");
 
                     }
-
-
                 }
-
             }
         });
 
 
-
+        //Event Listener used for clear button that removes selected products from basket listArea: if a customer had scanned an item they didn't want
         clearBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -177,19 +169,18 @@ public class KioskPage extends JFrame {
         });
 
 
-
+        //Event Listener for productsTable
         productsTable.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
 
                 DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
+                //Variable "selectedRowIndex" used to set the selected row value into productField
                 int selectedRowIndex = productsTable.getSelectedRow();
 
-
+                //product name being at column "0" in JTable to be displayed in productField when product is selected
                 productField.setText(model.getValueAt(selectedRowIndex, 0).toString());
-
-
             }
         });
 
@@ -197,7 +188,6 @@ public class KioskPage extends JFrame {
         printBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
 
             }
         });
