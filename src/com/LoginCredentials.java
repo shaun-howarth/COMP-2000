@@ -7,7 +7,7 @@ import static java.util.Map.entry;
 
 public class LoginCredentials {
 
-    //HashMap used for AdminPage Login
+    //HashMap used for AdminPage Login: containing username and password for the two admin accounts
     Map<String, String> logininfo = Map.ofEntries(
             entry("jasmith", "canErty6"),
             entry("apbellow", "Y$67975f")

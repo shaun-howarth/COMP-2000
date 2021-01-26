@@ -25,8 +25,9 @@ public class AdminPage extends JFrame {
 
         setTitle("Admin Login Page: to view Stock Database");
         setContentPane(mainPanel);
+        setContentPane(adminPanel);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setPreferredSize(new Dimension(800, 600));
+        setPreferredSize(new Dimension(500, 400));
         pack();
 
 
@@ -37,7 +38,7 @@ public class AdminPage extends JFrame {
 
 
         //Customisation for messageLabel for user logging in
-        messageLabel.setFont(new Font(null,Font.ITALIC,25));
+        messageLabel.setFont(new Font(null,Font.ITALIC,20));
 
 
         // Event listener for home button: will go to landing page
@@ -63,7 +64,7 @@ public class AdminPage extends JFrame {
         });
 
 
-        // Event listener for admin login button: will go to open DB
+        // Event listener for admin login button: will go to open StockdbPage
         // Only if login is successful
         loginBtn.addMouseListener(new MouseAdapter() {
             @Override
@@ -107,6 +108,7 @@ public class AdminPage extends JFrame {
     );
 
 
+    //Constructor passing in "loginfo" HASHMAP
     AdminPage(Map<String, String> loginInfoOriginal) {
         logininfo = loginInfoOriginal;
 

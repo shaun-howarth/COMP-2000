@@ -28,6 +28,7 @@ public class KioskPage extends JFrame {
     private JButton cardBtn;
     private JTextField productField;
     private JTextField quantityField;
+    private JButton printBtn;
 
 
     public KioskPage() {
@@ -193,7 +194,13 @@ public class KioskPage extends JFrame {
         });
 
 
+        printBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
 
+
+            }
+        });
     }
 
 

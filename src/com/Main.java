@@ -11,5 +11,4 @@ public class Main {
     AdminPage adminPage = new AdminPage(loginCredentials.getLoginInfo());
 
     }
-
 }

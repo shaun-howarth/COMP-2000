@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 
 public class ReceiptPage extends JFrame {
     private JPanel mainPanel;
-    private JTextArea listtextArea;
+    private JTextArea receiptArea;
     private JButton homeBtn;
     private JPanel receiptPanel;
 
