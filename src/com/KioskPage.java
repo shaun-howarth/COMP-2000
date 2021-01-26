@@ -120,14 +120,17 @@ public class KioskPage extends JFrame {
                 DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
                 int Item = productsTable.getSelectedRow();
 
-                String pName;
-                String pQuantity;
+
                 double cost;
                 double productTot;
-                pName = model.getValueAt(Item, 0).toString();
+
+
                 cost = Double.parseDouble(model.getValueAt(Item, 1).toString());
-                pQuantity = model.getValueAt(Item, 3).toString();
+
                 productTot = cost * Double.parseDouble(quantityField.getText());
+
+
+
 
                 if (productField.getText().isEmpty() || quantityField.getText().isEmpty())
                 {
@@ -171,7 +174,10 @@ public class KioskPage extends JFrame {
                 DefaultTableModel model = (DefaultTableModel) productsTable.getModel();
                 int selectedRowIndex = productsTable.getSelectedRow();
 
+
                 productField.setText(model.getValueAt(selectedRowIndex, 0).toString());
+
+
             }
         });
     }

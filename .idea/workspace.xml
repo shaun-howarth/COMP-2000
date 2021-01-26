@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69ce3b26-7105-4448-93aa-5e66099f8a0e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/CardPage.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/CardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/KioskPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/com/StockdbPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/COMP-2000/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/COMP-2000/stock.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/stock.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/stock.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/KioskPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/KioskPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/StockdbPage.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/StockdbPage.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +57,7 @@
       <recent name="com" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LandingPage">
+  <component name="RunManager" selected="Application.ReceiptPage">
     <configuration name="AdminPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.AdminPage" />
       <module name="COMP-2000" />
@@ -88,8 +97,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.Main" />
+    <configuration name="ReceiptPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ReceiptPage" />
       <module name="COMP-2000" />
       <extension name="coverage">
         <pattern>
@@ -116,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReceiptPage" />
         <item itemvalue="Application.LandingPage" />
         <item itemvalue="Application.KioskPage" />
         <item itemvalue="Application.AdminPage" />
         <item itemvalue="Application.StockdbPage" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
