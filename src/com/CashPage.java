@@ -5,18 +5,17 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CardPage extends JFrame {
+public class CashPage extends JFrame {
     private JPanel mainPanel;
-    private JPanel cardPanel;
+    private JPanel cashPanel;
     private JButton payBtn;
-    private JTextArea textArea1;
+    private JTextField textField1;
 
 
-    public CardPage() {
+    public CashPage() {
 
-        setTitle("Card Page");
+        setTitle("Cash Page");
         setContentPane(mainPanel);
-        setContentPane(cardPanel);
         setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
         setPreferredSize(new Dimension(400,400));
         pack();
@@ -25,20 +24,16 @@ public class CardPage extends JFrame {
         payBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
-
         payBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "Card Accepted: Thank You for shopping!");
+                JOptionPane.showMessageDialog(null, "Cash entered: Please await change if any!");
             }
         });
     }
 
     public static void main (String[] args) {
-        CardPage page = new CardPage();
+        CashPage page = new CashPage();
         page.setVisible(true);
     }
-
-
 }
-

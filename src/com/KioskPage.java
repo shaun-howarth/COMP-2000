@@ -63,7 +63,8 @@ public class KioskPage extends JFrame {
         cashBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                CashPage s =new CashPage();
+                s.setVisible(true);
             }
         });
 
