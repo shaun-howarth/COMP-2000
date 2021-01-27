@@ -8,8 +8,9 @@ import java.awt.event.ActionListener;
 public class ReceiptPage extends JFrame {
     private JPanel mainPanel;
     private JTextArea receiptArea;
-    private JButton homeBtn;
+    private JButton closeBtn;
     private JPanel receiptPanel;
+
 
     public ReceiptPage() {
 
@@ -21,18 +22,14 @@ public class ReceiptPage extends JFrame {
 
 
         //Hover cursor effect for all Jbuttons
-
-        homeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        closeBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
         // Event listener for home button: will go to Landing Page
-
-        homeBtn.addActionListener(new ActionListener() {
+        closeBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                LandingPage s = new LandingPage();
-                s.setVisible(true);
-                dispose();
+               dispose();
             }
         });
     }
@@ -43,6 +40,5 @@ public class ReceiptPage extends JFrame {
         ReceiptPage page = new ReceiptPage();
         page.setVisible(true);
     }
-
 
 }

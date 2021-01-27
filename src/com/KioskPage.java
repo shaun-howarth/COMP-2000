@@ -48,6 +48,7 @@ public class KioskPage extends JFrame {
         clearBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         scanBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
         productsBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        printBtn.setCursor(new Cursor(Cursor.HAND_CURSOR));
 
 
         // Event listener for home button: to go to landing page
@@ -186,9 +187,11 @@ public class KioskPage extends JFrame {
 
 
         printBtn.addActionListener(new ActionListener() {
-            @Override
+
             public void actionPerformed(ActionEvent e) {
 
+                ReceiptPage s = new ReceiptPage();
+                s.setVisible(true);
             }
         });
     }
