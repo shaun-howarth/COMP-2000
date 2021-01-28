@@ -1,0 +1,10 @@
+Name           , 		Price (£) , 	Quantity Remaining , 	Barcode
+Smoked Salmon  /		4.50	  /	4		   /	12345645
+Sausages       /		2.50      /	9		   /	12345646
+Chicken	       /		2.50      /	4		   /	12345647
+Bacon Rashers  /		3.00	  /6		   /	12345648
+Beef	       /		1.80      /	8		   /	12345649
+Lamb           /		2.20      /	8		   /	12345651
+Bannanas       /		0.30	  /	6		   /	12345652
+pears/0.30/2/65147831
+Tea/0.30/2/45126587
