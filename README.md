@@ -13,4 +13,6 @@ Password: Y$67975f
 
 The "kisokPage" which is the Kiosk user interface will enable a customer (non-admin user) to add products into their shopping basket from the stock db file. There will be a column in the basket area that will sum up the total cost for each product depending on the quantity amount that has been added to the shopping basket. There are button options to pay with cash or card.
 
+JAR executable file is located in the following Direcotry within Repo: COMP-2000/out/artifacts/COMP_2000_jar/
+
 
